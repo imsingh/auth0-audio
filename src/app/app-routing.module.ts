@@ -1,10 +1,18 @@
 import { NgModule } from '@angular/core';
-import { Routes, RouterModule } from '@angular/router';
+import { RouterModule, Routes } from '@angular/router';
+import { PlayerComponent } from './pages/player/player.component';
+import { ProfileComponent } from './pages/profile/profile.component';
 
-const routes: Routes = [];
+const routes: Routes = [
+    { path: '', component: PlayerComponent },
+    { path: 'profile', component: ProfileComponent },
+    { path: '**', redirectTo: '' }
+];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+    imports: [
+      RouterModule.forRoot(routes)
+    ],
+    exports: [RouterModule],
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}

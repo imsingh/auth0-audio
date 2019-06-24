@@ -1,0 +1,14 @@
+<div class="container">
+  <mat-toolbar color="primary" class="main-toolbar">
+    <mat-icon class="back-btn" routerLink="/">arrow_back</mat-icon>
+    <span>Audio Player - Profile</span>
+    <span class="spacer"></span>
+  </mat-toolbar>
+
+  <mat-card class="profile-card">
+      <img mat-card-image [src]="userProfile?.picture">
+      <mat-card-content>
+          <mat-card-title>{{ userProfile?.name }}</mat-card-title>
+      </mat-card-content>
+    </mat-card>
+</div>

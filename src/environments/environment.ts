@@ -3,9 +3,14 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  auth0: {
+    clientID: 'fpgeZTWjHn8Yb5rC5FjmdfNl63yl5KK9',
+    domain: 'angular-auth0-app.eu.auth0.com',
+    redirectUri: 'http://localhost:4200',
+    logoutUrl: 'http://localhost:4200'
+  }
 };
-
 /*
  * For easier debugging in development mode, you can import the following file
  * to ignore zone related error stack frames such as `zone.run`, `zoneDelegate.invokeTask`.
