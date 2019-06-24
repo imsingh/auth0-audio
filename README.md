@@ -1,27 +1,45 @@
-# AngularAudio
+# What this app is for?
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.0.3.
+It is an audio player app. It allows user to play, pause the audio track. Also, user can play next or previous track. In addition to that, user can change the current playing time using a seekbar.
 
-## Development server
+# Running the prototype
+Follow the steps to run the application:
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+* `git clone` this repo
+* `cd auth0-audio` and `npm install`
+* run `npm start`
+* open browser on `http://localhost:4200/`
+* login in the app and you will see the tracks to play
+* click on any track and it will start playing
+* in the bottom bar, you will see buttons to play/pause, next or previous track and a seekbar to change the time.
 
-## Code scaffolding
+# Introduction (Outline)
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Prerequisites
+### Install required tools
+### Scafolding the App
+### Installing Project Dependencies
 
-## Build
+## Developing Audio Player UI using Angular Material
+### Audio Player HTML
+### Styling Audio Player
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+## Creating a Service to Manage the Playback
+### Creating Playback Observable
 
-## Running unit tests
+## Reading the Music Files
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Managing playback state using RxJS
+### Creating an Observable for State Management
 
-## Running end-to-end tests
+## Stitching all together
+### The Audio Player UI Controller
+### Building and Running the Audio Player
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+## Authentication with Auth0
+### Installing Depedencies
+### Set Up an Auth0 Application
+### Configuring Auth0
+### Auth Service
 
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+## Conclusion and Next Steps
